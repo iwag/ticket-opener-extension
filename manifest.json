@@ -1,0 +1,27 @@
+{
+
+    "manifest_version": 2,
+    "name": "ticket opener",
+    "version": "1.0",
+  
+    "description": "Adds a red border to all webpages matching mozilla.org.",
+  
+    "icons": {
+      "48": "icon/icon.png"
+    },
+    "permissions": [
+      "tabs",
+      "storage"
+    ],
+  "options_ui": {
+    "page": "src/options.html"
+  },
+    "omnibox": {
+      "keyword": "a"
+    },
+    "background": {
+      "scripts": [
+        "src/background.js"
+      ]
+    }
+  }
